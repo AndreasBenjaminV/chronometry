@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #004590; /* Electric blue background */
+
+  }
+  
+/* .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  } */
+
+  .login-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.5); /* Slightly transparent white */
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* One third of the screen width */
+    margin-right: 5%; /* Add some margin to the right */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-field {
+    width: 90%; /* 70% of the login box width */
+    padding: 10px;
+    margin: 10px auto; /* Center the input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9; /* Light background for input fields */
+  }
+  
+  .input-field::placeholder {
+    color: #aaa; /* Placeholder text color */
+  }
+  
+  .login-button {
+    width: 100%; /* 70% of the login box width */
+    padding: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px auto; /* Center the button */
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+  }
+  
+  .social-login {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center the buttons */
+  }
+  
+  .social-button {
+    width: 100%; /* 70% of the login box width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px 0; /* Add some margin between buttons */
+  }
+  
+  .social-button.google {
+    background: #db4437;
+  }
+  
+  .social-button.google:hover {
+    background: #c23321;
+  }
+  
+  .social-button.facebook {
+    background: #3b5998;
+  }
+  
+  .social-button.facebook:hover {
+    background: #2d4373;
+  }
