@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# Chronometry App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el repositorio de la aplicación Chronometry. A continuación, se detallan los pasos para instalar y ejecutar la aplicación en tu entorno local.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (versión 14 o superior)
+- npm (versión 6 o superior) o yarn (opcional)
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona el repositorio en tu máquina local:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    git clone https://github.com/AndreasBenjaminV/chronometry-app.git
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navega al directorio del proyecto:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    ```bash
+    cd chronometry-app
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Instala las dependencias del proyecto:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    Si usas npm:
+
+    ```bash
+    npm install
+    ```
+
+    Si usas yarn:
+
+    ```bash
+    yarn install
+    ```
+
+## Ejecución
+
+1. Inicia la aplicación en modo de desarrollo:
+
+    Si usas npm:
+
+    ```bash
+    npm start
+    ```
+
+    Si usas yarn:
+
+    ```bash
+    yarn start
+    ```
+
+2. Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación en funcionamiento.
+
+## Estructura del Proyecto
+
+- [src](http://_vscodecontentref_/1): Contiene el código fuente de la aplicación.
+  - `pages/`: Contiene las páginas principales de la aplicación, como [Login.tsx](http://_vscodecontentref_/2).
+  - `assets/`: Contiene los recursos estáticos, como imágenes y estilos CSS.
+- [public](http://_vscodecontentref_/3): Contiene los archivos públicos que se sirven directamente.
+- [package.json](http://_vscodecontentref_/4): Contiene las dependencias y scripts del proyecto.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request en el repositorio original.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
