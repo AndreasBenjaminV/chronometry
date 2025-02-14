@@ -10,6 +10,10 @@ const LoginPage: React.FC = () => {
       <Grid container spacing={2} sx={{ maxWidth: 1200 }}>
         <Grid item xs={12} md={6}>
           <Paper elevation={3} sx={{ padding: 4, width: "100%" }}>
+            <Typography variant="body2" align="right" sx={{ mt: 2 }}>
+                Ya tienes una cuenta? <Link href="/login">Inicia sesión</Link>
+              </Typography> <br />
+
             <Typography variant="h5" align="center" gutterBottom>
               Registrate en Chronometry
             </Typography>
@@ -49,14 +53,11 @@ const LoginPage: React.FC = () => {
             </Box>
             
             <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-              Al crear una cuenta tu aceptas los términos y condiciones.
+              Al crear una cuenta, acepta las <Link href="#">Condiciones del servicio</Link>. Para más información sobre las prácticas de privacidad de Chronometry, consulta la <Link href="#">Declaración de privacidad</Link> de Chronometry. Ocasionalmente te enviaremos correos electrónicos relacionados con la cuenta.
             </Typography>
 
-            <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-              Ya tienes una cuenta? <Link href="/login">Inicia sesión</Link>
-            </Typography>
 
-            <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+            <Typography variant="body2" align="left" sx={{ mt: 2 }}>
                 <Link href="#" onClick={() => window.history.back()}>Volver</Link>
             </Typography>
 

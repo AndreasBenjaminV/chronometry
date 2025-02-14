@@ -8,6 +8,10 @@ const LoginPage: React.FC = () => {
       className="login-container" >
 
       <Paper elevation={3} sx={{ padding: 4, maxWidth: 400, width: "100%" }}>
+        <Typography variant="body2" align="right" sx={{ mt: 2 }}>
+          No tienes una cuenta? <Link href="/register">Regístrate</Link>
+        </Typography> <br />
+      
         <Typography variant="h5" align="center" gutterBottom>
           Inicia sesión en Chronometry
         </Typography>
@@ -39,7 +43,7 @@ const LoginPage: React.FC = () => {
             Iniciar sesión
           </Button>
 
-          <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+          <Typography variant="body2" align="left" sx={{ mt: 2 }}>
             <Link href="#" onClick={() => window.history.back()}>Volver</Link>
           </Typography>
 
