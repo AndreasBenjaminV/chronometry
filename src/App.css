@@ -42,12 +42,14 @@
 }
 
 body {
-  background-color: #cee7ff;
+  /* background-color: #cee7ff; */
+  /* image as background */
+  background-image: url('/Users/matiasantiguaycarrera/Projects/chronometry/src/assets/17380.jpg');
 }
 
 button {
-  background-color: #134972;
-  color: white;
+  background-color: #cee7ff;
+  color: #032940;
   border: none;
   padding: 0.5em 1em;
   border-radius: 0.5em;
@@ -56,5 +58,5 @@ button {
 }
 
 link {
-  color: #134972;
+  color: #032940;
 }

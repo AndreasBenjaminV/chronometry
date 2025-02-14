@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh", textAlign: "center" }}>
       <img src={logo} alt="Chronometry Logo" style={{ width: "150px", marginBottom: "20px" }} />
-      <h1>Chronometry</h1>
+      <h1 style={{ color: "#cee7ff" }}>Chronometry</h1>
       <nav>
         <Link to="/login" className="nav-link">
           <button>Login</button>
