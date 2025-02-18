@@ -1,6 +1,6 @@
-import React from "react";
 import { Box, TextField, Button, Typography, Paper, Link } from "@mui/material";
 import "./Login.css";
+import React from "react";
 
 const LoginPage: React.FC = () => {
   return (
@@ -19,6 +19,7 @@ const LoginPage: React.FC = () => {
         <Box component="form" sx={{ display: "flex", flexDirection: "column" }}>
           <TextField
             label="Nombre de usuario"
+            id="username"
             fullWidth
             margin="normal"
             required
@@ -27,6 +28,7 @@ const LoginPage: React.FC = () => {
 
           <TextField
             label="Contraseña"
+            id="password"
             type="password"
             fullWidth
             margin="normal"
@@ -34,14 +36,23 @@ const LoginPage: React.FC = () => {
             helperText="La contraseña debe contener de 8 a 15 caracteres, con al menos 1 número y una letra mayúscula."
           />
           
-          <Button
+            <Button
             variant="contained"
             color="primary"
             fullWidth
             sx={{ mt: 2 }}
-          >
+            onClick={() => {
+              const username = (document.getElementById('username') as HTMLInputElement).value;
+              const password = (document.getElementById('password') as HTMLInputElement).value;
+              if (username === "admin" && password === "123") {
+              window.location.href = "/profile";
+              } else {
+              alert("Nombre de usuario o contraseña incorrectos");
+              }
+            }}
+            >
             Iniciar sesión
-          </Button>
+            </Button>
 
           <Typography variant="body2" align="left" sx={{ mt: 2 }}>
             <Link href="#" onClick={() => window.history.back()}>Volver</Link>

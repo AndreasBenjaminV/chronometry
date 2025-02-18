@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Profile from "./pages/Profile/Profile";
+import Training from "./pages/Trainning/Trainning";
 import logo from "./assets/logo.png"; 
 import "./App.css"; 
 
@@ -32,6 +34,8 @@ const Root: React.FC = () => {
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/training/:id" element={<Training />} />
       </Routes>
     </Router>
   );
