@@ -60,3 +60,27 @@ button {
 link {
   color: #032940;
 }
+
+.logo {
+  height: 3em; /* Make the logo smaller */
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  display: inline-block; /* Ensure the logo and link are inline */
+  vertical-align: middle; /* Align the logo vertically with the link */
+}
+
+footer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  background-color: white; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  left: 0; /* Ensure the footer spans the full width */
+  a {
+    color: black;
+  }
+}
