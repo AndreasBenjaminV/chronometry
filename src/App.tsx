@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Profile from "./pages/Profile/Profile";
 import logo from "./assets/logo.png"; 
 import "./App.css"; 
 
@@ -19,6 +20,9 @@ const App: React.FC = () => {
         <Link to="/register" className="nav-link">
           <button>Register</button>
         </Link>
+        <Link to="/profile" className="nav-link">
+          <button>Profile</button>
+        </Link>
       </nav>
     </div>
   );
@@ -32,6 +36,7 @@ const Root: React.FC = () => {
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        z<Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
