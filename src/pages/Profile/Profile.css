@@ -1,0 +1,50 @@
+.profile-container {
+    margin-top: 20px;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.profile-card {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.profile-box {
+    text-align: center;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.edit-button, .update-button, .close-button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.muted-text {
+    color: gray;
+}
+
+.profile-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.attendance-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
